@@ -26,9 +26,7 @@
     <!--1 or more repetitions:-->
     <paragraph>
       <!--You have a CHOICE of the next 4 items at this level-->
-      A parte "Abstract" do ficheiro XML pode ter vários parágrafos, com texto em <italic>itálico</italic> e texto a <bold>negrito</bold>.
-      Também pode conter texto <underline>sublinhado</underline> bem como links <link type="int_link">internos</link> e externos como,
-      por exemplo, <link type="ext_link">http://www4.di.uminho.pt/</link>.
+      A parte "Abstract" do ficheiro XML pode ter vários parágrafos, com texto em <italic>itálico</italic> e texto a <bold>negrito</bold>.Também pode conter texto <underline>sublinhado</underline> bem como links <link type="int_link">internos</link> e externos como, por exemplo, <link type="ext_link">http://www4.di.uminho.pt/</link>.
     </paragraph>
   </abstract>
   <deliverables>
