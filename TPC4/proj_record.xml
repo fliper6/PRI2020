@@ -31,6 +31,9 @@
     </abstract>
     <deliverables>
         <link url="https://github.com/fliper6/PRI2020/blob/main/TPC4/">Ficheiros do TPC4 </link>
+        <link url="https://github.com/fliper6/PRI2020/blob/main/TPC4/arq-original.xml">Ficheiro XML dos arqueossítios</link>
         <link url="https://github.com/fliper6/PRI2020/blob/main/TPC4/proj_record.dtd">Ficheiro DTD deste project record</link>
+        <link url="https://github.com/fliper6/PRI2020/tree/main/TPC4/site">Pasta com os ficheiros do site</link>
+        <link url="https://github.com/fliper6/PRI2020/blob/main/TPC4/server.js">Ficheiro do servidor Node.js</link>
     </deliverables>
 </pr>
