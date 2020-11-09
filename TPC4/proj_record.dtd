@@ -30,4 +30,4 @@
 <!ATTLIST link
             url CDATA #REQUIRED>
 
-<!ELEMENT derivables (link+)>
+<!ELEMENT deliverables (link+)>
