@@ -22,7 +22,7 @@
         </p>
         <p>
             Consiste num servidor <i>Node.js</i>, que envia ficheiros sobre dados da "Escola de Música".
-            Toda a informação é originada de um ficheiro de formato <i>JSON</i>, que incluiu todas os
+            Toda a informação é originada de um ficheiro de formato <i>JSON</i>, que incluiu todos os
             dados sobre a escola.
         </p>
     </abstract>
