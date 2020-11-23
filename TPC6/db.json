@@ -1,0 +1,32 @@
+{
+  "todolist": [
+    {
+      "descricao": "Fazer TPC de PRI",
+      "responsavel": "Filipa Santos",
+      "data": "23-11-2020 14:00",
+      "estado": "ativo",
+      "id": 1
+    },
+    {
+      "descricao": "Teste de PRI",
+      "responsavel": "Filipa Santos",
+      "data": "05-01-2021 11:00",
+      "estado": "ativo",
+      "id": 2
+    },
+    {
+      "descricao": "Consulta no dentista",
+      "responsavel": "Filipa Santos",
+      "data": "16-10-2020 15:00",
+      "estado": "finalizado",
+      "id": 2
+    },
+    {
+      "descricao": "",
+      "responsavel": "",
+      "data": "05-01-2021 11:00",
+      "estado": "ativo",
+      "id": 3
+    }
+  ]
+}
