@@ -103,8 +103,8 @@ function geraListaTarefas(l) {
                     <td>${t.data}</td>
                     <td>${t.responsavel}</td>
                     <td>${t.descricao}</td>
-                    <td> <button name="acao" value="finalizarT${t.id} type="submit">Finalizar</button> </td>
-                    <td> <button name="acao" value="cancelarT${t.id} type="submit">Cancelar</button> </td>
+                    <td> <button name="acao" value="finalizarT${t.id}" type="submit">Finalizar</button> </td>
+                    <td> <button name="acao" value="cancelarT${t.id}" type="submit">Cancelar</button> </td>
                 </form>
             </tr>
             `
@@ -200,12 +200,20 @@ var toDoListServer = http.createServer(function (req, res) {
                     resultado["estado"]="ativo"
                     axios.post('http://localhost:3000/todolist', resultado)
                         .then(response => {
-                            var todolist = response.data
-                            res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
-                            res.write(geraToDoList(todolist,d))
-                            res.end()
+                            axios.get("http://localhost:3000/todolist/")
+                                .then(response => {
+                                    var todolist = response.data
+                                    res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
+                                    res.write(geraToDoList(todolist,d))
+                                    res.end()
+                                })
+                                .catch(function(erro){
+                                    res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
+                                    res.write("<p>Erro: Não foi possível obter a ToDo List.")
+                                    res.end()
+                            })
                         })
-                         .catch(erro => {
+                        .catch(erro => {
                             res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
                             res.write('<p>Erro no POST: ' + erro + '</p>')
                             res.write('<p><a href="/">Voltar</a></p>')
@@ -220,11 +228,9 @@ var toDoListServer = http.createServer(function (req, res) {
                     else {
 
                         // Processamento da ação
-                        var acao = JSON.stringify(resultado).split(":")[1];
-                        var id = acao.split("T")[1];
-                        id = id.substring(0,id.length-2)
-                        acao = acao.split("T")[0];
-                        acao = acao.substring(1,acao.length)
+                        var acao = JSON.stringify(resultado).split(":")[1]; 
+                        var id = acao.split("T")[1]; id = id.substring(0,id.length-2)
+                        acao = acao.split("T")[0]; acao = acao.substring(1,acao.length)
                         
                         // Atualizar o campo "estado" na db
                         var update = {}
@@ -233,10 +239,18 @@ var toDoListServer = http.createServer(function (req, res) {
 
                         axios.patch(`http://localhost:3000/todolist/${id}`, update)
                                 .then(response => {
-                                    var todolist = response.data
-                                    res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
-                                    res.write(geraToDoList(todolist,d))
-                                    res.end()
+                                    axios.get("http://localhost:3000/todolist/")
+                                        .then(response => {
+                                            var todolist = response.data
+                                            res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
+                                            res.write(geraToDoList(todolist,d))
+                                            res.end()
+                                        })
+                                        .catch(function(erro){
+                                            res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
+                                            res.write("<p>Erro: Não foi possível obter a ToDo List.")
+                                            res.end()
+                                        })
                                 })
                                 .catch(erro => {
                                     res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
