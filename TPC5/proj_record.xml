@@ -28,7 +28,7 @@
     </abstract>
     <deliverables>
         <link url="https://github.com/fliper6/PRI2020/blob/main/TPC5/">Ficheiros do TPC5 </link>
-        <link url="https://github.com/fliper6/PRI2020/blob/main/TPC4/db.json">Ficheiro da database da "Escola de Música"</link>
-        <link url="https://github.com/fliper6/PRI2020/tree/main/TPC4/server.js">Ficheiro do servidor Node.js</link>
+        <link url="https://github.com/fliper6/PRI2020/blob/main/TPC5/db.json">Ficheiro da database da "Escola de Música"</link>
+        <link url="https://github.com/fliper6/PRI2020/tree/main/TPC5/server.js">Ficheiro do servidor Node.js</link>
     </deliverables>
 </pr>
