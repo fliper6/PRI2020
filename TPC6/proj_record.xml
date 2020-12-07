@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>Project Record - TPC6</key>
+        <title>Servidor Node.js To Do List</title>
+        <bdate>16-Nov-2020</bdate>
+        <edate>23-Nov-2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <workteam>
+        <worker num="a83631">
+            <name>Filipa Alves dos Santos</name>
+            <email>a83631@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Este trabalho foi realizado no contexto da Unidade Curricular <b>PRI</b>
+            (Processamento e Representação de Informação) do Mestrado em Engenharia Informática da  
+            Universidade do Minho.
+        </p>
+        <p>
+            Consiste num servidor <i>Node.js</i>, que consiste numa <b>lista de tarefas</b>.
+            É possível, criar novas tarefas, bem como mudar o estado delas de ativas, para 
+            finalizadas / canceladas.
+            Todas as tarefas são guardadas num ficheiro <i>JSON</i>.
+        </p>
+        <p>
+            A aplicação é uma <b>SPA</b>, isto é, uma Single Page Application. É uma aplicação web
+            que interage com o user escrevendo sempre na página web atual com nova informação.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/fliper6/PRI2020/blob/main/TPC6/">Ficheiros do TPC6 </link>
+        <link url="https://github.com/fliper6/PRI2020/blob/main/TPC6/db.json">Ficheiro da database das Tarefas</link>
+        <link url="https://github.com/fliper6/PRI2020/tree/main/TPC6/w3.css">Stylesheet utilizada</link>
+        <link url="https://github.com/fliper6/PRI2020/tree/main/TPC6/server.js">Ficheiro do servidor Node.js</link>
+    </deliverables>
+</pr>
